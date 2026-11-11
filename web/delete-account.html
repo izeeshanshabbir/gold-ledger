@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account — Gold Ledger</title>
+<style>
+  :root {
+    --ground: #0D0D0D;
+    --surface: #1A1A1A;
+    --line: #2A2A2A;
+    --ink: #FFFFFF;
+    --ink-mid: #B4B4B8;
+    --ink-soft: #7C7C84;
+    --gold: #D9A441;
+    --danger: #FF6B6B;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink-mid);
+    font-family: var(--sans);
+    line-height: 1.65;
+    padding: 0 20px 80px;
+    font-size: 15.5px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  a { color: var(--gold); }
+  .back { display: inline-block; margin: 40px 0 28px; font-size: 14px; text-decoration: none; }
+  .back:hover { text-decoration: underline; }
+  h1 { color: var(--ink); font-size: 34px; letter-spacing: -.022em; line-height: 1.15; margin: 0 0 10px; }
+  .lede { font-size: 17px; margin: 0 0 36px; }
+  h2 { color: var(--ink); font-size: 19px; letter-spacing: -.012em; margin: 38px 0 14px; }
+  p { margin: 0 0 14px; }
+  strong { color: var(--ink); font-weight: 600; }
+
+  ol.steps { counter-reset: s; list-style: none; padding: 0; margin: 0 0 20px; }
+  ol.steps li {
+    counter-increment: s;
+    position: relative;
+    padding: 0 0 18px 44px;
+    border-left: 1px solid var(--line);
+    margin-left: 13px;
+  }
+  ol.steps li:last-child { border-left-color: transparent; padding-bottom: 0; }
+  ol.steps li::before {
+    content: counter(s);
+    position: absolute;
+    left: -14px;
+    top: -2px;
+    width: 27px; height: 27px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin: 26px 0;
+  }
+  .card.warn { border-left: 3px solid var(--danger); border-radius: 0 6px 6px 0; }
+  .card p:last-child { margin-bottom: 0; }
+  .card h3 { color: var(--ink); font-size: 15px; margin: 0 0 10px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  .mail {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 13px 20px;
+    background: var(--surface);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .mail:hover, .mail:focus-visible { background: rgba(217,164,65,.1); outline: none; }
+  footer { margin-top: 52px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 13.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; Gold Ledger</a>
+
+  <h1>Delete Your Account</h1>
+  <p class="lede">You can permanently delete your Gold Ledger account and its data at any time. You do not need to contact us first — it can be done inside the app in under a minute.</p>
+
+  <h2>Delete from inside the app</h2>
+  <ol class="steps">
+    <li>Open Gold Ledger and sign in.</li>
+    <li>On the dashboard, tap your <strong>profile initial</strong> in the top-right corner to open the profile drawer.</li>
+    <li>Scroll to the bottom and tap <strong>Delete Account</strong>.</li>
+    <li>Read the confirmation and tap <strong>Continue</strong>.</li>
+    <li>Enter your password to confirm it is you, then tap <strong>Delete Forever</strong>.</li>
+  </ol>
+  <p>Your account is removed immediately and you are returned to the login screen.</p>
+
+  <div class="card">
+    <h3>What gets deleted</h3>
+    <ul>
+      <li>Your login and password</li>
+      <li>Your name and email address</li>
+      <li>Your virtual cash and token balances</li>
+      <li>Your full history of simulated buys, sells and transfers</li>
+    </ul>
+    <p>Nothing is retained on a delay and there is no recovery period — the deletion is immediate and permanent.</p>
+  </div>
+
+  <div class="card warn">
+    <h3>One thing that is not deleted</h3>
+    <p>If another user sent you simulated tokens, a copy of that transfer stays in <em>their</em> transaction history, because it is part of their own records. That copy contains your account identifier and the email the transfer was sent to. We cannot remove it without deleting that other person&rsquo;s data. Nothing else about you remains.</p>
+  </div>
+
+  <h2>If you cannot sign in</h2>
+  <p>If you have lost access to your account and cannot complete the steps above, email us from the address you registered with and we will delete the account for you.</p>
+  <p><a class="mail" href="mailto:ahsannisar446@gmail.com?subject=Gold%20Ledger%20account%20deletion%20request">Email ahsannisar446@gmail.com</a></p>
+  <p>Please include the email address on the account and the words &ldquo;account deletion request&rdquo;. We will confirm once it is done, normally within 7 days and always within 30.</p>
+
+  <footer>
+    Gold Ledger is a trading simulation using virtual money. See our <a href="privacy.html">Privacy Policy</a>.<br>
+    &copy; 2026 Ahsan Rao
+  </footer>
+</div>
+</body>
+</html>

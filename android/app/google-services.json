@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605424536369",
+    "project_id": "goldtokenapp",
+    "storage_bucket": "goldtokenapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605424536369:android:9f3d899d17bc05cc633e10",
+        "android_client_info": {
+          "package_name": "com.goldtokenapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1JNagOimAMdrN-Cf6dJZmeG_aswNKpZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
